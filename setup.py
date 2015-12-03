@@ -9,6 +9,7 @@ setup(
     author='Tome Cvitan',
     author_email='tome@cvitan.com',
     url='https://github.com/HearstCorp/django-jsonbfield',
+    download_url = 'https://github.com/HearstCorp/django-jsonbfield/tarball/v0.1.0',
     license='BSD',
     classifiers=[
         'Development Status :: 3 - Alpha',
