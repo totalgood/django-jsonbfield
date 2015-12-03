@@ -1,11 +1,17 @@
 from setuptools import setup, find_packages
 
+try:
+    long_description = open('README.rst', 'r').read()
+except:  # (IOError, ImportError, OSError, RuntimeError):
+    long_description='The Postgres 9.4 JSONB field support coming in Django 1.9'
+                     ' extracted to a standalone module'
+
+
 setup(
     name='jsonbfield',
     version='0.1.0',
     description='Django JSONB field',
-    long_description='The Postgres 9.4 JSONB field support coming in Django 1.9'
-                     ' extracted to a standalone module',
+    long_description=long_description,
     author='Tome Cvitan',
     author_email='tome@cvitan.com',
     url='https://github.com/HearstCorp/django-jsonbfield',
