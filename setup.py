@@ -1,4 +1,4 @@
-from setuptools import find_packages
+# from setuptools import find_packages
 from distutils.core import setup
 
 
@@ -10,13 +10,13 @@ except:  # (IOError, ImportError, OSError, RuntimeError):
 
 setup(
     name='jsonbfield',
-    version='0.1.1',
+    version='0.1.2',
     description='Django JSONB field',
     long_description=long_description,
     author='Tome Cvitan',
     author_email='tome@cvitan.com',
-    url='https://github.com/totalgood/django-jsonbfield',
-    download_url='https://github.com/totalgood/django-jsonbfield/tarball/v0.1.1',
+    url='https://github.com/totalgood/django-jsonbfield/',
+    # download_url='https://github.com/totalgood/django-jsonbfield/tarball/v0.1.2',
     license='BSD',
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -30,7 +30,7 @@ setup(
     ],
 
     keywords='django postgres jsonb',
-    packages=find_packages(exclude=['tests*']),
+    packages=['jsonbfield'],  # find_packages(exclude=['tests*']),
     install_requires=[
         'psycopg2>=2.5.4',
         'Django>=1.8'
