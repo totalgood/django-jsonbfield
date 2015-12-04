@@ -9,9 +9,9 @@ except:  # (IOError, ImportError, OSError, RuntimeError):
                         ' extracted to a standalone module')
 
 setup(
-    name='jsonbfield',
-    version='0.1.2',
-    description='Django JSONB field',
+    name='django-jsonbfield',
+    version='0.1.0',
+    description='Django JSONField that utilized PostGRESQL jsonb field type',
     long_description=long_description,
     author='Tome Cvitan',
     author_email='tome@cvitan.com',
