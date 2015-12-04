@@ -3,9 +3,8 @@ from setuptools import setup, find_packages
 try:
     long_description = open('README.rst', 'r').read()
 except:  # (IOError, ImportError, OSError, RuntimeError):
-    long_description='The Postgres 9.4 JSONB field support coming in Django 1.9'
-                     ' extracted to a standalone module'
-
+    long_description = ('The Postgres 9.4 JSONB field support coming in Django 1.9'
+                        ' extracted to a standalone module')
 
 setup(
     name='jsonbfield',
@@ -15,7 +14,7 @@ setup(
     author='Tome Cvitan',
     author_email='tome@cvitan.com',
     url='https://github.com/HearstCorp/django-jsonbfield',
-    download_url = 'https://github.com/HearstCorp/django-jsonbfield/tarball/v0.1.0',
+    download_url='https://github.com/HearstCorp/django-jsonbfield/tarball/v0.1.0',
     license='BSD',
     classifiers=[
         'Development Status :: 3 - Alpha',
