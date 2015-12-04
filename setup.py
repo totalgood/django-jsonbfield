@@ -1,4 +1,4 @@
-# from setuptools import find_packages
+from setuptools import find_packages
 from distutils.core import setup
 
 
@@ -30,7 +30,7 @@ setup(
     ],
 
     keywords='django postgres jsonb',
-    packages=['jsonbfield'],  # find_packages(exclude=['tests*']),
+    packages=find_packages(exclude=['tests*']),
     install_requires=[
         'psycopg2>=2.5.4',
         'Django>=1.8'
