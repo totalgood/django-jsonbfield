@@ -1,9 +1,7 @@
-**Note: This is basically a standalone version of the JSONB support in the Postgres contrib package of the Django master branch, targeted for the Django 1.9 release.** 
+**Note:** This is basically a standalone version of the JSONB support in the Postgres contrib package of the Django master branch, targeted for the Django 1.9 release. 
 
 JSONField
 ---------
-
-.. versionadded:: 1.9
 
 .. class:: JSONField(**options)
 
@@ -21,11 +19,11 @@ JSONField
     of the JSON which allows indexing. The trade-off is a small additional cost
     on writing to the ``jsonb`` field. ``JSONField`` uses ``jsonb``.
 
-    **As a result, the usage of this field is only supported on PostgreSQL
-    versions at least 9.4**.
+    **This field is only supported on PostgreSQL versions at least 9.4**.
+
 
 Querying JSONField
-^^^^^^^^^^^^^^^^^^^^
+==================
 
 We will use the following example model::
 
@@ -42,7 +40,7 @@ We will use the following example model::
 .. fieldlookup:: jsonfield.key
 
 Key, index, and path lookups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 To query based on a given dictionary key, simply use that key as the lookup
 name::

@@ -1,4 +1,6 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from distutils.core import setup
+
 
 try:
     long_description = open('README.rst', 'r').read()
@@ -8,13 +10,13 @@ except:  # (IOError, ImportError, OSError, RuntimeError):
 
 setup(
     name='jsonbfield',
-    version='0.1.0',
+    version='0.1.1',
     description='Django JSONB field',
     long_description=long_description,
     author='Tome Cvitan',
     author_email='tome@cvitan.com',
     url='https://github.com/totalgood/django-jsonbfield',
-    download_url='https://github.com/totalgood/django-jsonbfield/tarball/v0.1.0',
+    download_url='https://github.com/totalgood/django-jsonbfield/tarball/v0.1.1',
     license='BSD',
     classifiers=[
         'Development Status :: 3 - Alpha',
